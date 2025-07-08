@@ -89,7 +89,19 @@
     }
 
     aside p {
-      padding: 0 20px;
+      padding: 0.5em 1em;
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      background-color: #FFF4BF;
+      border-radius: 8px;
+      margin-bottom: 0.8em;
+    }
+
+    .icon {
+    	width: 20px;
+    	height: 20px;
+    	margin-right: 10px;
     }
 
     section {
@@ -133,24 +145,25 @@
       <h1>The Trying Mama's Kitchen Table</h1>
       <nav>
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="Home"><img src="icons/home.png" alt="Home" class="nav-icon">Home</a></li>
+          <li><a href="About"><img src="icons/about.png" alt="about" class="nav-icon">About</a></li>
+          <li><a href="Products"><img src="icons/shop.png" alt="Products" class="nav-icon">Products</a></li>
+          <li><a href="Services"><i class="fa-solid fa-briefcase" alt="services" class="nav-icon">Services</i></a></li>
+          <li><a href="Contact"><i class="fa-solid fa-address-card" alt="Contact" class="nav-icon">Contact</i></a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <aside>
-        <p>The sidebar content</p>
-        <p>The sidebar content</p>
-        <p>The sidebar content</p>
-        <p>The sidebar content</p>
-        <p>The sidebar content</p>
-        <p>The sidebar</p>
-        <p>The sidebar content</p>
+        <p>Breakfast</p>
+        <p>Breads</p>
+        <p>Brunch</p>
+        <p>Lunch</p>
+        <p>Appetizers</p>
+        <p>Dinner</p>
+        <p>Sides</p>
+        <p>Desserts</p>
       </aside>
 
       <section>
@@ -166,4 +179,4 @@
     </footer>
   </div>
 </body>
-</html>
+</html>	
