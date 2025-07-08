@@ -56,11 +56,16 @@
 			display: block;
 			margin: 0 0 1em 0;
 		}
-		main {
-			display: flex;
-			flex-direction: row;
-			align-items: flex-start;
-		}
+		@media (max-width: 768px) {
+			main {
+				display: flex;
+				flex-direction: row;
+				align-items: flex-start;
+				justify-content: space-between;
+				gap: 20px;
+				padding: 20px;
+			}
+		}	
 		aside {
 			max-width: 200px;
 			float: left;
