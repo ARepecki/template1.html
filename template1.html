@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="template1.css">
   <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+  <link rel=stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     /* Base font styling */
     body, p, aside, section, article, nav, div, footer {
@@ -67,6 +68,13 @@
       outline: 0;
     }
 
+    .nav-icon {
+    	width: 16px;
+    	height: 16px;
+    	vertical-align: middle;
+    	margin-right: 6px;
+    }
+
     img {
       max-width: 100%;
       height: auto;
@@ -88,6 +96,7 @@
       color: #FFD154;
     }
 
+    /* Sidebar Icon Styling */
     aside p {
       padding: 0.5em 1em;
       display: flex;
@@ -98,12 +107,41 @@
       margin-bottom: 0.8em;
     }
 
-    .icon {
+    aside p img.icon {
     	width: 20px;
     	height: 20px;
     	margin-right: 10px;
     }
 
+    /* Nav Links with Icons */
+    .nav-icon {
+    	width:16px;
+    	height: 16px;
+    	vertical-align: middle;
+    	margin-right: 6px;
+    }
+
+    /* Article Card Style */
+    .card {
+    	background-color: #FFF8DC;
+    	border-radius: 10px;
+    	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    	padding: 1em;
+    	margin-bottom: 1.5em;
+    	overflow: hidden;
+    }
+
+    .card img {
+    	width:100%;
+    	height: auto;
+    	border-radius: 8px;
+    	margin-bottom: 0.5em;
+    }
+
+    .card h2 {
+    	margin-top: 0.5em;
+    	font-family: 'Sevillana', cursive;
+    }
     section {
       flex: 1;
     }
@@ -156,20 +194,22 @@
 
     <main>
       <aside>
-        <p>Breakfast</p>
-        <p>Breads</p>
-        <p>Brunch</p>
-        <p>Lunch</p>
-        <p>Appetizers</p>
-        <p>Dinner</p>
-        <p>Sides</p>
-        <p>Desserts</p>
+        <p><img src="icons/breakfast.png" class="icon" alt="Breakfast icon">Breakfast</p>
+        <p><img src="icons/bread.png" class="icon" alt="Bread icon">Breads</p>
+        <p><img src="icons/brunch.png" class="icon" alt="Brunch icon">Brunch</p>
+        <p><img src="icons/lunch.png" class="icon" alt="Lunch icon">Lunch</p>
+        <p><img src="icons/appetizers.png" class="icon" alt="Appetizer icon">Appetizers</p>
+        <p><img src="icons/dinner.png" class="icon" alt="Dinner icon">Dinner</p>
+        <p><img src="icons/sides.png" class="icon" alt="Sides icon">Sides</p>
+        <p><img src="icons/Desserts.png" class="icon" alt="Dessert icon">Desserts</p>
       </aside>
 
       <section>
         <article>
-          <h2>Article One Heading</h2>
-          <p>Article One content</p>
+        	<article class="card">
+        		<img src="images/pancakes.jpg" alt="stack of pancakes">
+          <h2>Sunday Brunch Recipes</h2>
+          <p>Delicious and fluffy options perfect for cozy mornings.</p>
         </article>
       </section>
     </main>
